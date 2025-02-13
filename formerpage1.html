@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewpoint" content="width=device-width,intial-sale=1.0">
+    <style>
+        div.basicinfo {
+            text-align: center;
+            border: 1px solid black;
+            padding: 100px 20px 100px 20px;
+            border-radius: 20px;
+            background-color: aliceblue;
+            flex: right;
+            box-sizing: border-box;
+            margin: 50px;
+        }
+
+        h1 {
+
+            text-align: center;
+        }
+
+        body {
+            background-color: rgba(55, 105, 55, 0.8);
+
+        }
+
+        div.pagination {
+            text-align: center;
+            color: black;
+            display: inline-block;
+            justify-content: center;
+            margin: 20px 0 0 0;
+            list-style: none;
+            float: right;
+
+        }
+
+        .pagination a {
+            text-decoration: none;
+            border: 1px solid rgb(54, 121, 132);
+            color: black;
+            padding: 5px;
+
+        }
+
+        div.registrationtype {
+            color: white;
+            display: flex;
+            justify-content: center;
+            margin: 0px;
+            font-size: 100px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Create an account</h1>
+    <div class="registrationtype">
+        <a href="formerpage1.html"><input type="Submit" value="Former"></a>
+        <a href="buyerpage1.html"><input type="Submit" value="Buyer"></a>
+    </div>
+    <div class="basicinfo">
+        <form>
+
+            <b> <label>Full Name :</label>
+                <input type="text" placeholder="Enter as per your aadhaar" required><br><br>
+                <label>Mobile Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your mobile number" maxlength="10"
+                    required><br><br>
+                <input type="button" Value="Send OTP"><br><br>
+                <label> Aadhaar Number:' </label>
+                <input type="number" maxlength="12" required><br><br>
+                <label>Date of Birth:</label>
+                <input type="date" id="date" required><br><br>
+                <label>Gender:</label>
+                <input type="radio" id="Female" value="Female" required><label>Female</label>
+                <input type="radio" id="Male" value="Male" required><label>Male</label>
+                <input type="radio" id="others" value="Others" required><label>others</label><br><br><br>
+                <div class="pagination">
+                    <a href="formerpage1.html">1</a>
+                    <a href="formerpage2.html">2</a>
+                    <a href="formerpage3.html">3</a>
+                    <a href="formerpage4.html">4</a>
+                </div>
+
+    </div>
+
+
+    </form>
+
+
+
+
+</body>
+
+
+
+
+
+</html>

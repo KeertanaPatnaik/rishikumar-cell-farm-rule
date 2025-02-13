@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewpoint" content="width=device-width">
+  <style>
+    div.bankinfo {
+      background-color: aliceblue;
+      margin: 100px;
+      padding: 50px 50px 70px 50px;
+      border: 1px solid black;
+      border-radius: 10px;
+
+
+    }
+
+    body {
+
+      background-color: rgb(105, 145, 145);
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    }
+
+    div.pagination {
+      text-align: center;
+      color: black;
+      display: inline-block;
+      justify-content: center;
+      margin: 20px 0 0 0;
+      list-style: none;
+      float: right;
+
+
+
+    }
+
+    .pagination a {
+      text-decoration: none;
+      border: 1px solid rgb(54, 121, 132);
+      color: black;
+      padding: 2px 5px 2px 5px;
+
+
+    }
+
+    .pagination a.active {
+      background-color: rgb(16, 83, 92);
+      color: white;
+    }
+
+    .pagination a:hover:not(.active) {
+      background-color: gray;
+    }
+  </style>
+</head>
+
+<body><!--bank information of farmer-->
+  <div class="bankinfo">
+    <form>
+      <b><u>
+          <h3>Banking Details:</h3>
+        </u>
+        <label>Bank Account:</label>
+        <input type="number"><br><br>
+        <label>IFSC Code:</label>
+        <input type="number"><br><br>
+        <b><label>UPI ID :<label></b>
+        <input type="number"><br><br>
+
+        <hr>
+        <h3>Documents:</h3>
+        <label> Aadhaar Card:</label>
+        <input type="file" name="filename" required><br><br>
+        <label>Land Ownershp Certificate/Farmer ID</label>
+        <input type="file" name="filename"><br><br>
+        <label> Bank Passbook</label>
+        <input type="file" name="filename"><br><br>
+
+      </b><!--pagination-->
+      <div class="pagination">
+        <a href="formerpage1.html">1</a>
+        <a href="formerpage2.html">2</a>
+        <a href="formerpage3.html">3</a>
+        <a href="formerpage4.html">4</a>
+
+
+
+
+      </div>
+
+
+  </div>
+</body>
+
+</html>

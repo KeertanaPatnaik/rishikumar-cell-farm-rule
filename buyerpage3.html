@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewpoint" content="width=device-width">
+    <style>
+        div.bankinfo {
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color: aliceblue;
+            margin: 100px;
+            padding: 50px 25px 50px 25px;
+        }
+
+        body {
+            background-color: rgb(125, 158, 158);
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 25px;
+        }
+        div.pagination {
+            text-align: center;
+            color: black;
+            display: inline-block;
+            justify-content: center;
+            margin: 20px 0 0 0;
+            list-style: none;
+            float: right;
+
+        }
+
+        .pagination a {
+            text-decoration: none;
+            border: 1px solid rgb(54, 121, 132);
+            color: black;
+            padding: 5px;
+        }
+
+        .pagination a.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .pagination a:hover:not(.active) {
+            background-color: gray;
+        }
+    </style>
+</head>
+<div class="bankinfo"><!--bankinformation of buyer-->
+    <form>
+        <label><strong>Bank Details:</strong></label>
+        <label>Bank Account Number</label>
+        <input type="number"><br><br>
+        <label> IFSC Code:</label>
+        <input type="number"><br><br>
+        <label>UPI ID:</label>
+        <input type="text"><br><br>
+        <label><strong>Documents</strong></label><br>
+        <label>GST Certificate:</label>
+        <input type="file"><br><br>
+        <label>PAN Card:</label>
+        <input type="file"><br><br>
+        <label>Business License/ Registration Certificate:</label>
+        <input type="file"><br><br>
+        <input type="submit" value="Next">
+        <!--pagination-->
+        <div class="pagination">
+            <a href="buyerpage1.html">1</a>
+            <a href="buyerpage2.html">2</a>
+            <a href="buyerpage3.html"class="active">3</a>
+            <a href="buyerpage4.html">4</a>
+        </div>
+
+</div>
+
+</form>
+
+</body>
+
+</html>

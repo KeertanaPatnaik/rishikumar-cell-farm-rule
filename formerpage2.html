@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewpoint" ,content="width=device-width,innitial-scale=0.1">
+    <style>
+        body {
+            background-color: rgb(125, 179, 143);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-style: normal;
+            font-size: 20px;
+        }
+
+        div.locationinfo {
+            background-color: white;
+            font-family: 'Verdana, Geneva, Tahoma, sans-serif';
+            margin: 100px;
+            padding: 50px 20px 50px 50px;
+            border: 2px solid black;
+            border-radius: 10px;
+
+            div.pagination {
+                text-align: center;
+                color: black;
+                display: inline-block;
+                justify-content: center;
+                margin: 20px 0 0 0;
+                list-style: none;
+                float: right;
+            }
+
+            .pagination a {
+                text-decoration: none;
+                border: 1px solid rgb(54, 121, 132);
+                color: black;
+                padding: 2px 5px 2px 5px;
+
+
+            }
+
+            .pagination a.active{
+                background-color: #4CAF50;
+                color: white;
+            }
+
+            .pagination a:hover:not(.active) {
+                background-color:gray;
+            }
+        
+    </style>
+</head>
+
+<body>
+    <div class="locationinfo"><!--land information-->
+        <form>
+            <label><strong>LOCATION & LAND DETAILS:</strong></label><br><br>
+            <lebel>State:</lebel>
+            <input type="text" required><br><br>
+            <label>District:</label>
+            <input type="text" required><br><br>
+            <label>Village/Town:</label>
+            <input type="text" required><br><br>
+            <label>Pincode:</label>
+            <input type="number" required><br><br>
+            <label>Land Ownership Status:</label>
+            <input type="radio" values="Owner"><label>Owner</label>
+            <input type="radio" values="Tenant"><label>Tenant</label><br><br>
+            <label>Land Area:</label>
+            <input type="text" placeholder="In Acres/Hectares"required>
+            <select>
+                <option>Acres</option>
+                <option>Hectares</option>
+            </select><br><br>
+             <!--pagination-->
+            <div class="pagination">
+                <a href="formerpage1.html">1</a>
+                <a href="formerpage2.html">2</a>
+                <a href="formerpage3.html">3</a>
+                <a href="formerpage4.html">4</a>
+            </div>
+
+    </div>
+    </form>
+
+</body>
+
+</html>

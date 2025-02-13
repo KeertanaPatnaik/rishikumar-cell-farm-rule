@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewpoint" content="width=device-width,intial-scale=0.1">
+    <style>
+        body {
+            background-color: rgb(142, 191, 191);
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 20px;
+            font-weight: italic;
+
+        }
+
+        div.crops {
+            border: 2px solid black;
+            margin: 100px;
+            padding: 50px 25px 50px 25px;
+            background-color: white;
+            border-radius: 20px;
+            justify-content: center;
+            display: block;
+        }
+
+        div.pagination {
+            text-align: center;
+            color: black;
+            display: inline-block;
+            justify-content: center;
+            margin: 20px 0 0 0;
+            list-style: none;
+            float: right;
+
+        }
+
+        .pagination a {
+            text-decoration: none;
+            border: 1px solid rgb(54, 121, 132);
+            color: black;
+            padding: 2px 5px 2px 5px;
+        }
+
+        .pagination a.active {
+            background-color: rgb(16, 83, 92);
+            color: white;
+        }
+
+        .pagination a:hover:not(.active) {
+            background-color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="crops">
+        <form><!--crops information-->
+            <h3>CROP & MARKET PREFERENCES:</h3>
+            <label><b>Main Crops Grown :</b></label>
+            <select>
+                <option>Wheat</option>
+                <option>Rice</option>
+                <option>Cotton</option>
+                <option>Millets</option>
+                <option>Pulses</option>
+                <option>Sugarcane</option>
+                <option>Others</option>
+            </select><br><br>
+            <label><b>Selling Option:</label>
+            <select>
+                <option>Direct Sale</option>
+                <option>Bidding</option>
+            </select><br><br>
+            <label>Expexted Harvesting Season:</label>
+            <select>
+                <option>Winter Harvest</option>
+                <option>Autumn Harvest</option>
+                <option> Monsoon-Based Harvest</option></b>
+            </select><br><br>
+            <b>
+                <input type="checkbox"><label>Agree to Terms& Conditions</label></b><br><br>
+
+            <input type="submit" value="Submit">
+            </form>
+            <!--pagination-->
+            <div class="pagination">
+                <a href="formerpage1.html">1</a>
+                <a href="formerpage2.html">2</a>
+                <a href="formerpage3.html">3</a>
+                <a href="formerpage4.html">4</a>
+
+
+
+
+            </div>
+
+
+
+
+        </form>
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewpoint" content="width=device-width,initial-scale=0.1">
+    <style>
+        form {
+            border: 2px solid black;
+            border-radius: 10px;
+            margin: 100px;
+            padding: 50px 50px 50px 50px;
+            background-color: aliceblue;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: italic;
+            font-size:25px;
+        }
+        body {
+            background-color: rgb(106, 145, 145);
+        }
+        div.pagination {
+            text-align: center;
+            color: black;
+            display: inline-block;
+            justify-content: center;
+            margin: 20px 0 0 0;
+            list-style: none;
+            float: right;
+
+        }
+
+        .pagination a {
+            text-decoration: none;
+            border: 1px solid rgb(54, 121, 132);
+            color: black;
+            padding: 5px;
+        }
+
+        .pagination a.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .pagination a:hover:not(.active) {
+            background-color: gray;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div name="buyerbasicinfo">
+        <form><!--buyer company information-->
+            <label>Company Name:</label>
+            <input type="text" required><br><br>
+            <label>PAN Number:</label>
+            <input type="text" required><br><br>
+            <label>Address:</label>
+            <input type="text" required><br><br>
+            <label>Street:</label>
+            <input type="text" required><br><br>
+            <label>City:</label>
+            <input type="text" required><br><br>
+            <label>District:</label>
+            <input type="text" required><br><br>
+            <label>State</label>
+            <input type="text" required><br><br>
+            <label>Pincode:</label>
+            <input type="number" maxlength="6" required><br><br>
+            <input type="submit" value="Next">
+            <!--pagination-->
+            <div class="pagination">
+                <a href="buyerpage1.html">1</a>
+                <a href="buyerpage2.html" class="active">2</a>
+                <a href="buyerpage3.html">3</a>
+                <a href="buyerpage4.html">4</a>
+            </div>
+    </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewpoint" content="width=device-width,intialscale=0.1">
+    <style>
+        body {
+            background-color: rgb(65, 141, 147);
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 15px;
+            font-family: italic;
+
+        }
+
+        div.crops {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background-color: aliceblue;
+            border: 2px solid black;
+            padding: 50px 25px 50px 25px;
+            margin: 100px;
+            border-radius: 10px;
+            font-size:25px;
+        }
+        div.pagination {
+            text-align: center;
+            color: black;
+            display: inline-block;
+            justify-content: center;
+            margin: 20px 0 0 0;
+            list-style: none;
+            float: right;
+
+        }
+
+        .pagination a {
+            text-decoration: none;
+            border: 1px solid rgb(54, 121, 132);
+            color: black;
+            padding: 5px;
+        }
+
+        .pagination a.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .pagination a:hover:not(.active) {
+            background-color: gray;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="crops"><b><!--buying information-->
+            <form>
+                <u>
+                    <p> Crops& Marketing:</p><br>
+                </u>
+                <label>Types Of Crops Interested In:</label>
+                <select>
+                    <option>Wheat</option>
+                    <option>Rice</option>
+                    <option>Pulses</option>
+                    <option>Vegetables</option>
+                    <option>Others</option>
+
+                </select><br><br>
+                <label>Buying Method</label>
+                <select>
+                    <option>Auction</option>
+                    <option>Direct Purchase</option>
+
+
+                </select><br><br>
+                <label>Average Buying Quantity:</label>
+                <input type="number"><br><br>
+                <input type="checkbox">
+                <label>Agree Terms& conditions</label><br><br>
+                <input type="submit">
+                <div class="pagination"><!--pagination-->
+                    <a href="buyerpage1.html">1</a>
+                    <a href="buyerpage2.html">2</a>
+                    <a href="buyerpage3.html">3</a>
+                    <a href="buyerpage4.html"class="active">4</a>
+                </div>
+        </b>       
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewpoint" content="width=device-width,innitial-scale=0.1">
+    <style>
+        body {
+            background-color: rgb(127, 161, 161);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        div.basicbuyerinfo {
+            margin: 100px;
+            border: 1px solid black;
+            padding: 50px 50px 70px 50px;
+            background-color: aliceblue;
+            border-radius: 20px;
+            font-size:25px;
+        }
+
+        div.pagination {
+            text-align: center;
+            color: black;
+            display: inline-block;
+            justify-content: center;
+            margin: 20px 0 0 0;
+            list-style: none;
+            float: right;
+
+        }
+
+        .pagination a {
+            text-decoration: none;
+            border: 1px solid rgb(54, 121, 132);
+            color: black;
+            padding: 5px;
+        }
+
+        .pagination a.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .pagination a:hover:not(.active) {
+            background-color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="basicbuyerinfo"><!--buyer information-->
+        <form>
+            <label>Full Name/Business Name:</label>
+            <input type="text" id="fname" placeholder="Enter your name" required><br><br>
+            <label>Mobile Number</label>
+
+            <input type="tel" required>
+            <input type="submit" value="Send OTP" class="otp"><br><br>
+            <label>Email Address</label>
+            <input type="email" id="mail" required><br><br>
+            <select>
+                <option>Consumer</option>
+                <option>Others</option>
+            </select><br><br><!--pagination-->
+            <div class="pagination">
+                <a href="buyerpage1.html" class="active">1</a>
+                <a href="buyerpage2.html">2</a>
+                <a href="buyerpage3.html">3</a>
+                <a href="buyerpage4.html">4</a>
+            </div>
+    </div>
+    </form>
+    </div>
+</body>
+
+</html>
